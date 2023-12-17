@@ -19,7 +19,6 @@ interface IAppThemeProviderProps {
   children: React.ReactNode
 }
 
-// eslint-disable-next-line react/prop-types
 export const AppThemeProvider: React.FC<IAppThemeProviderProps> = ({ children }) => {
   const [themeName, setThemeName] = useState<'light' | 'dark'>('light');
 
